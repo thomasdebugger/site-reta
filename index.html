@@ -1,0 +1,381 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>R&A — Spécialistes câbles chauffants</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ── Navigation ── -->
+<nav id="navbar">
+  <a href="#hero" class="nav-logo" id="navLogo">
+    <img src="asset/Logo.jpg" alt="R&A"
+         onerror="this.style.display='none'; document.getElementById('navLogoText').style.display='block'" />
+    <span class="nav-logo-text" id="navLogoText" style="display:none">R&A</span>
+  </a>
+  <div class="nav-links" id="navLinks">
+    <a href="#about">À propos</a>
+    <a href="#services">Services</a>
+    <a href="#equipe">Équipe</a>
+    <a href="#contact" class="nav-cta">Nous contacter</a>
+  </div>
+  <div class="burger" id="burger" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- ── Hero ── -->
+<section id="hero">
+  <img class="hero-img" src="asset/IMG_3029-768x576.jpg" alt="Équipe R&A sur un chantier" />
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <span class="hero-eyebrow">Spécialistes câbles chauffants — PACA &amp; Rhône-Alpes</span>
+    <h1>L'expertise du<br/><em>chauffage électrique</em><br/>au sol</h1>
+    <p class="hero-sub">
+      Diagnostic, réparation et maintenance de planchers chauffants pour particuliers, copropriétés et professionnels.
+    </p>
+    <div class="hero-btns">
+      <a href="#contact" class="btn-fill">Demander une intervention</a>
+      <a href="#services" class="btn-outline">Nos services</a>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <span>Découvrir</span>
+    <div class="hero-scroll-line"></div>
+  </div>
+</section>
+
+<!-- ── Stats bar ── -->
+<div class="stats-bar">
+  <div class="stat-item"><strong>+200</strong><span>Chantiers réalisés</span></div>
+  <div class="stat-item"><strong>PACA</strong><span>&amp; Rhône-Alpes</span></div>
+  <div class="stat-item"><strong>2</strong><span>Experts terrain</span></div>
+  <div class="stat-item"><strong>48h</strong><span>Délai d'intervention</span></div>
+</div>
+
+<!-- ── Qui sommes-nous ── -->
+<section id="about">
+  <div class="section-wrap">
+    <div class="section-header">
+      <span class="section-tag">À propos</span>
+      <h2>Qui sommes-nous ?</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="about-wrap">
+      <div class="about-text">
+        <p>Société spécialisée dans le dépannage des résistances électriques, en particulier des planchers chauffants (direct-sol, base collective ou hors-gel). Nous intervenons principalement dans le quart sud-est de la France (PACA et Rhône-Alpes). Nous sommes parfois amenés à intervenir dans toute la France.</p>
+        <p>Nous réalisons également la maintenance et le contrôle des systèmes de chauffages électriques collectifs (contrôle périodique, mise en route et extinction, dépannage). Ainsi que du dépannage électrique plus général.</p>
+        <p>Nous travaillons main dans la main avec la société Warmup France pour le service après-vente ou pour la fourniture de matériel.</p>
+        <p>Fort de nos années d'expérience dans le domaine de la réparation des câbles chauffants et de l'électricité, nous avons décidé de former notre société R&amp;A, non seulement par goût du challenge mais surtout pour apporter une plus-value. Fondée en 2019, notre société se développe sur les secteurs PACA et Rhône-Alpes.</p>
+        <ul class="about-list">
+          <li>Détection et réparation de câble chauffant</li>
+          <li>Expertise Chauffage</li>
+          <li>Traçage sur plan et/ou avant travaux</li>
+          <li>Contrôle / maintenance de bâtiment</li>
+          <li>Vente de câbles chauffants</li>
+        </ul>
+      </div>
+      <div class="about-img-wrap">
+        <img src="asset/IMG_3029-768x576.jpg" alt="L'équipe R&A sur le terrain" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Services ── -->
+<section id="services">
+
+  <div class="service-intro">
+    <span class="section-tag">Ce que nous faisons</span>
+    <h2>Votre chauffage est en panne ?</h2>
+    <p>Du diagnostic à la remise en état, nous intervenons sans démolition excessive — directement sur le câble défectueux.</p>
+  </div>
+
+  <div class="services-list">
+
+    <!-- 01 — Détection -->
+    <div class="service-row">
+      <div class="service-img-wrap">
+        <img src="asset/120895548_784800148962709_7551579398868484287_n.jpg" alt="Détection câble chauffant" />
+      </div>
+      <div class="service-body">
+        <span class="service-num">01</span>
+        <h3>Détection de câble</h3>
+        <p>Nous pouvons, sans casser la zone, détecter et localiser un certain nombre de problèmes sur le câble chauffant.</p>
+      </div>
+    </div>
+
+    <!-- 02 — Réparation + slider avant/après -->
+    <div class="service-row reverse">
+      <div class="service-img-wrap">
+        <div class="ba-wrap" id="baWrap">
+          <img class="ba-before" src="asset/avant.png" alt="Avant réparation" />
+          <img class="ba-after" id="baAfter" src="asset/apres.png" alt="Après réparation" />
+          <div class="ba-line" id="baLine">
+            <div class="ba-handle">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="10 18 4 12 10 6"></polyline>
+                <polyline points="14 6 20 12 14 18"></polyline>
+              </svg>
+            </div>
+          </div>
+          <span class="ba-label ba-label-before">Avant</span>
+          <span class="ba-label ba-label-after">Après</span>
+        </div>
+      </div>
+      <div class="service-body">
+        <span class="service-num">02</span>
+        <h3>Réparation</h3>
+        <p>Nous écroutons le sol et réparons le câble chauffant défectueux via une extraction propre, en limitant au maximum la casse.</p>
+      </div>
+    </div>
+
+    <!-- 03 — Remise en état -->
+    <div class="service-row">
+      <div class="service-img-wrap">
+        <img src="asset/121075291_644373619581921_5201511557980277481_n-e1602334658150-owpnbp767zu4yru0kb0gc5lgi9rmqkbf6kz75fevp8.jpg" alt="Remise en état après réparation" />
+      </div>
+      <div class="service-body">
+        <span class="service-num">03</span>
+        <h3>Remise en état</h3>
+        <p>Remise en état après la détection et l'extraction du câble défectueux. Nous mettons un point d'honneur à la remise au plus propre de la zone de travail.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Slider services -->
+  <div class="svc-ticker-section">
+    <span class="svc-ticker-label">Nos services</span>
+    <div class="svc-ticker-track">
+      <!-- Série 1 -->
+      <div class="svc-ticker-item">
+        <div class="svc-ticker-img"><img src="asset/cable4-150x150.jpg" alt="Caméra thermique" /></div>
+        <h4>Caméra thermique chauffage au sol</h4>
+        <span>Société R&amp;A</span>
+      </div>
+      <div class="svc-ticker-item">
+        <div class="svc-ticker-img"><img src="asset/10993510_10202830857566652_1782095101527852492_o-150x150.jpg" alt="Réparation" /></div>
+        <h4>Réparation chauffage au sol</h4>
+        <span>Société R&amp;A</span>
+      </div>
+      <div class="svc-ticker-item">
+        <div class="svc-ticker-img"><img src="asset/cable.jpg" alt="Dépannage" /></div>
+        <h4>Dépannage électrique</h4>
+        <span>Société R&amp;A</span>
+      </div>
+      <div class="svc-ticker-item">
+        <div class="svc-ticker-img"><img src="asset/121243616_466084264352107_3687896593483097548_n-150x150.jpg" alt="Vente câble" /></div>
+        <h4>Vente de câble chauffant</h4>
+        <span>Société R&amp;A</span>
+      </div>
+      <div class="svc-ticker-item">
+        <div class="svc-ticker-img"><img src="asset/0repwg3txsyw5z1lsp3azidy05nyab71rcgrj9hoo-75x75.jpg" alt="Contrôle bâtiment" /></div>
+        <h4>Contrôle de bâtiment</h4>
+        <span>Société R&amp;A</span>
+      </div>
+      <div class="svc-ticker-item">
+        <div class="svc-ticker-img"><img src="asset/121147472_3520091531412976_3238145253557826399_n-150x150.jpg" alt="Maintenance" /></div>
+        <h4>Maintenance chauffage</h4>
+        <span>Société R&amp;A</span>
+      </div>
+      <!-- Série 2 — doublon seamless -->
+      <div class="svc-ticker-item">
+        <div class="svc-ticker-img"><img src="asset/cable4-150x150.jpg" alt="Caméra thermique" /></div>
+        <h4>Caméra thermique chauffage au sol</h4>
+        <span>Société R&amp;A</span>
+      </div>
+      <div class="svc-ticker-item">
+        <div class="svc-ticker-img"><img src="asset/10993510_10202830857566652_1782095101527852492_o-150x150.jpg" alt="Réparation" /></div>
+        <h4>Réparation chauffage au sol</h4>
+        <span>Société R&amp;A</span>
+      </div>
+      <div class="svc-ticker-item">
+        <div class="svc-ticker-img"><img src="asset/cable.jpg" alt="Dépannage" /></div>
+        <h4>Dépannage électrique</h4>
+        <span>Société R&amp;A</span>
+      </div>
+      <div class="svc-ticker-item">
+        <div class="svc-ticker-img"><img src="asset/121243616_466084264352107_3687896593483097548_n-150x150.jpg" alt="Vente câble" /></div>
+        <h4>Vente de câble chauffant</h4>
+        <span>Société R&amp;A</span>
+      </div>
+      <div class="svc-ticker-item">
+        <div class="svc-ticker-img"><img src="asset/0repwg3txsyw5z1lsp3azidy05nyab71rcgrj9hoo-75x75.jpg" alt="Contrôle bâtiment" /></div>
+        <h4>Contrôle de bâtiment</h4>
+        <span>Société R&amp;A</span>
+      </div>
+      <div class="svc-ticker-item">
+        <div class="svc-ticker-img"><img src="asset/121147472_3520091531412976_3238145253557826399_n-150x150.jpg" alt="Maintenance" /></div>
+        <h4>Maintenance chauffage</h4>
+        <span>Société R&amp;A</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="zone-banner">
+    <div class="zone-text">
+      <span class="icon">📍</span>
+      <p><strong>Zone principale :</strong> PACA et Rhône-Alpes — interventions ponctuelles sur tout le territoire français.</p>
+    </div>
+    <img class="zone-map" src="asset/carte-administrative_reg-Reims-1000px-copie.jpg" alt="Carte zones d'intervention" />
+  </div>
+</section>
+
+<!-- ── Ticker partenaires ── -->
+<div class="ticker-section">
+  <p class="ticker-label">Ils nous font confiance</p>
+  <div class="ticker-track">
+    <div class="ticker-item"><img src="asset/partner/toutle05_emc2_gap-3458529253-75x75.jpg" alt="Partenaire" /></div>
+    <div class="ticker-item"><img src="asset/partner/Unknown-1-75x75.jpeg" alt="Partenaire" /></div>
+    <div class="ticker-item"><img src="asset/partner/Unknown-75x75.png" alt="Partenaire" /></div>
+    <div class="ticker-item"><img src="asset/partner/vindicis-75x75.jpg" alt="Partenaire" /></div>
+    <div class="ticker-item"><img src="asset/partner/zPAEWIu1-75x75.jpg" alt="Partenaire" /></div>
+    <!-- doublon pour boucle seamless -->
+    <div class="ticker-item"><img src="asset/partner/toutle05_emc2_gap-3458529253-75x75.jpg" alt="Partenaire" /></div>
+    <div class="ticker-item"><img src="asset/partner/Unknown-1-75x75.jpeg" alt="Partenaire" /></div>
+    <div class="ticker-item"><img src="asset/partner/Unknown-75x75.png" alt="Partenaire" /></div>
+    <div class="ticker-item"><img src="asset/partner/vindicis-75x75.jpg" alt="Partenaire" /></div>
+    <div class="ticker-item"><img src="asset/partner/zPAEWIu1-75x75.jpg" alt="Partenaire" /></div>
+  </div>
+</div>
+
+<!-- ── Équipe ── -->
+<section id="equipe">
+  <div class="section-wrap">
+    <div class="section-header">
+      <span class="section-tag">Qui sommes-nous</span>
+      <h2>L'équipe</h2>
+      <p class="section-lead">Deux associés, une expertise complémentaire et un engagement commun : intervenir vite, bien, et en toute transparence.</p>
+      <div class="divider"></div>
+    </div>
+
+    <img class="team-hero-img" src="asset/IMG_3029-768x576.jpg" alt="L'équipe R&A sur le terrain" />
+
+    <div class="team-grid">
+      <div class="team-card">
+        <img class="team-photo" src="asset/equipe/laurent.jpg" alt="Laurent Allemand" />
+        <div class="team-card-body">
+          <div class="role">Co-fondateur</div>
+          <h3>Laurent Allemand</h3>
+          <p>Haut-alpin d'origine, Laurent a longtemps travaillé dans la réparation des systèmes de chauffage au sol en tant qu'employé avant de sauter le pas pour créer la société R&amp;A. Autodidacte passionné, il a forgé son expertise par l'expérience pratique et excelle à proposer des solutions adaptées aux défis du chauffage collectif et résidentiel.</p>
+          <a class="contact-chip" href="tel:+33695585300">
+            <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.61 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6 6l.96-.96a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16z"/></svg>
+            06 95 58 53 00
+          </a>
+        </div>
+      </div>
+      <div class="team-card">
+        <img class="team-photo" src="asset/equipe/Pierre.jpg" alt="Pierre Rodriguez" />
+        <div class="team-card-body">
+          <div class="role">Co-fondateur</div>
+          <h3>Pierre Rodriguez</h3>
+          <p>Haut-alpin d'adoption, Pierre a suivi une formation d'électricien général au cours de laquelle il a travaillé en tant qu'employé. Après quatre années d'expérience dans la réparation de câbles chauffants, les deux associés ont décidé de fonder ensemble la société R&amp;A pour apporter leur expertise au service des particuliers et professionnels.</p>
+          <a class="contact-chip" href="tel:+33766896274">
+            <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.61 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6 6l.96-.96a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16z"/></svg>
+            07 66 89 62 74
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Contact ── -->
+<section id="contact">
+  <div class="section-wrap">
+    <div class="section-header">
+      <span class="section-tag">Parlons-en</span>
+      <h2>Nous contacter</h2>
+      <p class="section-lead">Décrivez votre problème, on revient vers vous rapidement — généralement sous 24h.</p>
+      <div class="divider"></div>
+    </div>
+
+    <div class="contact-wrap">
+      <div class="contact-info">
+        <div class="info-item">
+          <div class="info-icon">📞</div>
+          <div>
+            <h4>Laurent Allemand</h4>
+            <p><a href="tel:+33695585300">06 95 58 53 00</a></p>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="info-icon">📞</div>
+          <div>
+            <h4>Pierre Rodriguez</h4>
+            <p><a href="tel:+33766896274">07 66 89 62 74</a></p>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="info-icon">📍</div>
+          <div>
+            <h4>Siège social</h4>
+            <p>380 Rue du Fournelas<br/>05000 Pelleautier</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="info-icon">🏢</div>
+          <div>
+            <h4>Société</h4>
+            <p>SARL R&amp;A — SIRET 845 212 349 00011</p>
+          </div>
+        </div>
+      </div>
+
+      <form id="contactForm" onsubmit="handleSubmit(event)" novalidate>
+        <div class="form-row">
+          <div>
+            <label for="nom">Nom *</label>
+            <input type="text" id="nom" name="nom" autocomplete="name" required placeholder="Dupont" />
+          </div>
+          <div>
+            <label for="tel">Téléphone *</label>
+            <input type="tel" id="tel" name="tel" autocomplete="tel" required placeholder="06 00 00 00 00" />
+          </div>
+        </div>
+        <div>
+          <label for="sujet">Type de demande</label>
+          <select id="sujet" name="sujet">
+            <option value="">Sélectionner…</option>
+            <option>Panne / câble en défaut</option>
+            <option>Traçage avant travaux</option>
+            <option>Contrôle / maintenance</option>
+            <option>Devis matériel</option>
+            <option>Autre</option>
+          </select>
+        </div>
+        <div>
+          <label for="message">Description *</label>
+          <textarea id="message" name="message" required placeholder="Décrivez votre situation : type de logement, symptômes, date souhaitée…"></textarea>
+        </div>
+        <div class="hp-field" aria-hidden="true">
+          <input type="text" id="website" name="website" tabindex="-1" autocomplete="off" />
+        </div>
+        <div class="form-footer">
+          <p class="form-note">Aucun email affiché — vos données ne servent qu'à vous répondre.</p>
+          <button type="submit" class="btn-send">Envoyer →</button>
+        </div>
+        <div id="formMsg"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ── Footer ── -->
+<footer>
+  <span class="footer-logo">R&A</span>
+  <p>© 2025 SARL R&amp;A — TVA FR23 845212349</p>
+  <div class="footer-links">
+    <a href="#">Mentions légales</a>
+    <a href="#">Confidentialité</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
