@@ -67,9 +67,34 @@ nav.scrolled .burger span { background: var(--text); }
   display: flex; align-items: center; justify-content: center;
   text-align: center; overflow: hidden;
 }
-.hero-img {
+.hero-mosaic {
   position: absolute; inset: 0;
-  width: 100%; height: 100%; object-fit: cover; object-position: center;
+  display: grid;
+  gap: 0;
+  background: #0f0a05;
+}
+.mosaic-tile { position: relative; overflow: hidden; }
+.mosaic-layer {
+  position: absolute; inset: -1px;
+  background-repeat: no-repeat;
+  opacity: 0;
+  filter: contrast(1.12) saturate(1.22) brightness(1.05);
+  transition: opacity 1.1s ease;
+}
+.mosaic-layer.active { opacity: 1; }
+.mosaic-canvas {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  opacity: 0;
+  filter: contrast(1.12) saturate(1.22) brightness(1.05);
+  transition: opacity 1.1s ease;
+}
+.mosaic-canvas.active { opacity: 1; }
+.mosaic-video-source {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  opacity: 0;
+  pointer-events: none;
 }
 .hero-overlay {
   position: absolute; inset: 0;
