@@ -482,6 +482,58 @@ h2 {
   to   { transform: translateX(-50%); }
 }
 
+/* ── ARTICLES ── */
+#articles { background: var(--bg); }
+.articles-list {
+  display: flex; flex-direction: column;
+  gap: 4.5rem;
+}
+.article-block {
+  display: grid; grid-template-columns: 380px 1fr; gap: 3rem; align-items: start;
+}
+.article-block.reverse { grid-template-columns: 1fr 380px; }
+.article-block.reverse .article-media { order: 2; }
+.article-block.reverse .article-body  { order: 1; }
+
+.article-media { border-radius: 4px; overflow: hidden; }
+.article-media img {
+  width: 100%; height: 280px; object-fit: cover; object-position: center;
+  filter: saturate(.88);
+  transition: transform .5s ease, filter .4s;
+}
+.article-block:hover .article-media img { filter: saturate(1); }
+
+.article-media-grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 4px;
+}
+.article-media-grid img { height: 138px; }
+
+.article-body h3 {
+  font-family: var(--serif); font-size: 1.5rem; font-weight: 700;
+  color: var(--text); margin-bottom: 1rem; line-height: 1.25;
+}
+.article-body p { font-size: .92rem; color: var(--muted); line-height: 1.8; }
+.article-body p + p { margin-top: .8rem; }
+.article-body a { color: var(--accent); font-weight: 500; }
+.article-body a:hover { text-decoration: underline; }
+
+.article-steps { display: flex; flex-direction: column; gap: 1.4rem; }
+.article-step { display: flex; gap: 1.2rem; }
+.article-step-num {
+  font-family: var(--serif); font-size: .85rem; font-weight: 700;
+  color: var(--accent); flex-shrink: 0; padding-top: .15rem;
+}
+.article-step h4 { font-size: .95rem; font-weight: 600; color: var(--text); margin-bottom: .3rem; }
+.article-step p { font-size: .89rem; color: var(--muted); line-height: 1.75; }
+
+@media (max-width: 800px) {
+  .article-block, .article-block.reverse { grid-template-columns: 1fr; }
+  .article-block.reverse .article-media,
+  .article-block.reverse .article-body { order: 0; }
+  .article-media img { height: 220px; }
+  .article-media-grid img { height: 110px; }
+}
+
 /* ── EQUIPE ── */
 #equipe { background: var(--bg); }
 .team-hero-img {
